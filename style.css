@@ -261,6 +261,9 @@ nav i:hover {
     .toggle-button {
         display: flex;
     }
+    .pop {
+        display: flex;
+    }
     .reveal {
         position: absolute;
         right: 0;
