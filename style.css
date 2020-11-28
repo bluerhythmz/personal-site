@@ -16,6 +16,65 @@ body {
     overflow: hidden;
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111100;
+    background: linear-gradient(to right,#0014a8, black);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeout 3.5s;
+    animation-fill-mode: forwards;
+}
+
+.loader h1 {
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
+    margin-top: 60px;
+    color: #0014a8;
+    -webkit-text-stroke: 0.1vw black;
+    
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0vw black;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+    
+}
+
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+@keyframes fadeout {
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .logo-container {
     height: 100%;
     display: flex;
@@ -106,6 +165,15 @@ header {
 }
 
 @media all and (max-width: 480px) {
+    .loader {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .loader h1 {
+        font-size: 30px;
+    }
     .nav-link {
         font-size: 10px;
     }
