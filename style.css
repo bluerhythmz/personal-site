@@ -267,6 +267,7 @@ nav i:hover {
     }
     nav {
         width: 80vw;
+        display: none;
     }
     body {
         overflow: hidden;
