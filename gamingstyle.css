@@ -228,6 +228,9 @@ main h1 {
     nav {
         width: 80vw;
     }
+    .pop {
+        display: flex;
+    }
     .grid {
         display: grid;
         gap: 30px;
