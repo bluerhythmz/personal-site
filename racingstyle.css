@@ -108,7 +108,7 @@ main h1 {
     position: absolute;
     top: 2.95rem;
     right: 5rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 31px;

@@ -86,7 +86,7 @@ header {
     position: absolute;
     top: 3.35rem;
     right: 5rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 31px;
