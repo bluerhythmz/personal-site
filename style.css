@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 111;
+    z-index: 1;
     background: linear-gradient(to right,#0014a8, black);
     height: 100%;
     width: 100%;
@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation: fadeout 3.5s;
+    animation: fadeout 2s;
     animation-fill-mode: forwards;
 }
 
@@ -52,7 +52,7 @@ h1::before {
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 0vw black;
     overflow: hidden;
-    animation: animate 4s linear infinite;
+    animation: animate 2s linear infinite;
     
 }
 
