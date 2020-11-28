@@ -225,8 +225,12 @@ main h1 {
         position: absolute;
         right: 0;
     }
+    .pop {
+        display: flex;
+    }
     nav {
         width: 80vw;
+        display: none;
     }
     .grid {
         display: grid;
