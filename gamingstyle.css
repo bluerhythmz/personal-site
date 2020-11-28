@@ -227,6 +227,7 @@ main h1 {
     }
     nav {
         width: 80vw;
+        display: none;
     }
     .pop {
         display: flex;
