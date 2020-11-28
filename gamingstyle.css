@@ -38,8 +38,6 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    height: 10vh;
-    width: 70%;
     background-color: rgba(10, 0, 219, 0.1);
     align-items: center;
     margin: 30px auto;
@@ -105,4 +103,99 @@ main h1 {
     grid-column: 2 / 2;
     word-wrap: normal;
     border-radius: 80px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.95rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 480px) {
+    body {
+        height: 100rem;
+        width: 20rem;
+        overflow: scroll;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        opacity: 0;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+        opacity: 1;
+        
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+    .nav-link a {
+        padding: .5rem 1rem;
+    }
+    .grid {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1 / 1fr);
+        grid-template-rows: minmax(200px, 500px);
+        
+    }
+    main {
+        width: 20rem;
+        text-align: center;
+        margin: auto;
+    }
+    .item1 {
+        margin-top: 40px;
+        color: white;
+        grid-column: 1 / 1;
+        border-radius: 80px;
+    }
+    
+    .item2 {
+        margin-top: 40px;
+        color: white;
+        grid-column: 1 / 1;
+        border-radius: 80px;
+    }
+    .item2 h2 {
+        margin-bottom: 40px;
+    }
+    iframe {
+        height: 250px;
+        width: 320px;
+    }
 }

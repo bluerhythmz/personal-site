@@ -25,12 +25,12 @@ body {
 
 .logo {
     color: #0A00DB;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .logo-container p {
     color: white;
-    font-size: 28px;
+    font-size: 2rem;
     text-shadow: 1px 1px 1px rgb(134, 0, 134);
     font-family: 'Nerko One', cursive;
 }
@@ -38,8 +38,6 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    height: 10vh;
-    width: 70%;
     background-color: rgba(10, 0, 219, 0.1);
     align-items: center;
     margin: 30px auto;
@@ -56,6 +54,10 @@ header {
     font-size: 20px;
     padding: 20px;
     font-family: 'Nerko One', cursive;
+}
+
+.nav-link:hover {
+    background-color: rgb(179, 179, 179);
 }
 
 .nav-link a {
@@ -78,4 +80,60 @@ header {
 
 .active {
     color: #0CA8E8;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 3.35rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 480px) {
+    .nav-link {
+        font-size: 10px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        text-align: center;
+    }
+    .nav-link a {
+        padding: .5rem 1rem;
+    }
 }
