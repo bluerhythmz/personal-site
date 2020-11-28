@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1111100;
+    z-index: 111;
     background: linear-gradient(to right,#0014a8, black);
     height: 100%;
     width: 100%;
