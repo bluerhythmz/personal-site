@@ -49,6 +49,7 @@ header {
 
 .nav-link a:hover {
     color: rgb(235, 10, 223);
+    transition: .3s linear;
 }
 
 .nav-links {

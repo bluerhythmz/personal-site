@@ -49,6 +49,7 @@ header {
 
 .nav-link a:hover {
     color: rgb(235, 10, 223);
+    transition: .3s linear;
 }
 
 .nav-links {
@@ -115,7 +116,7 @@ main h1 {
 .toggle-button {
     position: absolute;
     top: 2.95rem;
-    right: 5rem;
+    right: 4rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
