@@ -43,6 +43,14 @@ header {
     margin: 30px auto;
 }
 
+.nav-link:hover {
+    background-color: rgba(46, 12, 247,0.2);
+}
+
+.nav-link a:hover {
+    color: rgb(235, 10, 223);
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -196,5 +204,38 @@ main h1 {
     iframe {
         height: 250px;
         width: 320px;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 740px) {
+    body {
+        height: 100rem;
+        width: 40rem;
+        overflow: scroll;
+    }
+    main {
+        width: 40rem;
+        text-align: center;
+        margin: auto;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .item1 {
+        margin-top: 40px;
+        color: white;
+        grid-column: 1 / 1;
+        border-radius: 80px;
+    }
+    
+    .item2 {
+        margin-top: 40px;
+        color: white;
+        grid-column: 1 / 1;
+        border-radius: 80px;
+    }
+
+    .item2 h2 {
+        margin-bottom: 40px;
     }
 }
