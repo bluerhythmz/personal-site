@@ -15,7 +15,7 @@ menu.addEventListener('click', () => {
 
 cancel.addEventListener('click', () => {
     nav.classList.remove('reveal')
-    nav.style.right = "-400px"
+    nav.style.right = "-40rem"
     setTimeout(() => {
         nav.classList.remove('pop')
     }, 150)

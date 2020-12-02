@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@400;500;600;700&display=swap');
-* {
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -50,8 +57,8 @@ body {
 .loader h1 {
     position: relative;
     font-family: 'Press Start 2P', cursive;
-    font-size: 80px;
-    margin-top: 60px;
+    font-size: 8rem;
+    margin-top: 6rem;
     color: #0014a8;
     -webkit-text-stroke: 0.1vw black;
     
@@ -96,19 +103,19 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 30px auto;
+    margin: 3rem auto;
 }
 
 header p {
     color: white;
     font-family: 'Nerko One', cursive;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 nav {
     position: absolute;
     top: 0;
-    right: -400px;
+    right: -4rem;
     background-color: rgba(46, 12, 247,0.2);
     width: 10vw;
     height: 100vh;
@@ -122,9 +129,9 @@ nav {
 
 nav i {
     color: white;
-    padding: 2px 5px;
-    margin-top: 40px;
-    margin-left: 20px;
+    padding: .2rem .5rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
     cursor: pointer;
 }
 
@@ -141,8 +148,8 @@ nav i:hover {
 }
 
 .nav-link {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 2rem;
+    padding: 2rem;
     font-family: 'Nerko One', cursive;
     
 }
@@ -150,8 +157,8 @@ nav i:hover {
 .nav-link::after {
     content: '';
     display: block;
-    width: 200px;
-    height: 10px;
+    width: 20rem;
+    height: 1rem;
     border-bottom: .5px solid black;
 }
 
@@ -198,7 +205,7 @@ nav i:hover {
 
 .logo-container p {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 1px rgb(134, 0, 134);
     font-family: 'Nerko One', cursive;
 }
@@ -229,16 +236,16 @@ nav i:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 31px;
-    height: 21px;
-    margin: 20px;
+    width: 3.1rem;
+    height: 2.1rem;
+    margin: 2rem;
 }
 
 .toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .reveal {
@@ -258,7 +265,7 @@ nav i:hover {
         left: 0;
     }
     .loader h1 {
-        font-size: 30px;
+        font-size: 3rem;
     }
     
 
@@ -286,7 +293,7 @@ nav i:hover {
 @media all and (min-width: 481px) and (max-width: 740px) {
     body {
         height: 100rem;
-        width: 40rem;
+        width: 70rem;
         overflow: scroll;
     }
     main {
@@ -294,11 +301,31 @@ nav i:hover {
         text-align: center;
         margin: auto;
     }
+    .loader {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .loader h1 {
+        font-size: 4rem;
+    }
+    nav {
+        width: 40vw;
+        display: none;
+    }
     .nav-link {
-        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    .pop {
+        display: flex;
+    }
+    .reveal {
+        position: absolute;
+        right: 0;
     }
     .item1 {
-        margin-top: 40px;
+        margin-top: 4rem;
         color: white;
         grid-column: 1 / 1;
         border-radius: 80px;
