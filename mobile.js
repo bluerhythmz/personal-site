@@ -7,7 +7,7 @@ menu.addEventListener('click', () => {
     nav.classList.add('pop')
     setTimeout(() => {
         nav.style.right = "0"
-    }, 100)
+    }, 150)
     menu.style.opacity = "0"
     darken.classList.add('shade')
     darken.style.zIndex = "1"
