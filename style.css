@@ -115,16 +115,17 @@ header p {
 nav {
     position: absolute;
     top: 0;
-    right: -40rem;
+    right: 0;
+    transform: translateX(100%);
     background-color: rgba(46, 12, 247,0.2);
     width: 10vw;
     height: 100vh;
-    display: none;
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     z-index: 2;
-    transition: all .2s linear;
+    transition: transform .2s linear;
 }
 
 nav i {
@@ -151,7 +152,7 @@ nav i:hover {
     font-size: 2rem;
     padding: 2rem;
     font-family: 'Nerko One', cursive;
-    
+    opacity: 0;
 }
 
 .nav-link::after {
@@ -159,7 +160,7 @@ nav i:hover {
     display: block;
     width: 20rem;
     height: 1rem;
-    border-bottom: .5px solid black;
+    border-bottom: .5px solid rgb(172, 167, 167);
 }
 
 .nav-link:hover {
@@ -176,6 +177,18 @@ nav i:hover {
     text-decoration: none;
     
 
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .main-container {
@@ -248,13 +261,9 @@ nav i:hover {
     border-radius: 1rem;
 }
 
-.reveal {
-    position: absolute;
-    right: 0;
-}
-
 .pop {
-    display: flex;
+    
+    transform: translateX(0%);
 }
 
 @media all and (max-width: 480px) {
@@ -275,10 +284,7 @@ nav i:hover {
     .pop {
         display: flex;
     }
-    .reveal {
-        position: absolute;
-        right: 0;
-    }
+    
     nav {
         width: 80vw;
         display: none;
@@ -320,10 +326,7 @@ nav i:hover {
     .pop {
         display: flex;
     }
-    .reveal {
-        position: absolute;
-        right: 0;
-    }
+    
     .item1 {
         margin-top: 4rem;
         color: white;
@@ -347,10 +350,7 @@ nav i:hover {
     .pop {
         display: flex;
     }
-    .reveal {
-        position: absolute;
-        right: 0;
-    }
+    
     nav {
         width: 20vw;
         display: none;

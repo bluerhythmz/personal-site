@@ -66,11 +66,12 @@ header p {
 nav {
     position: absolute;
     top: 0;
-    right: -400px;
+    right: 0;
+    transform: translateX(100%);
     background-color: rgba(46, 12, 247,0.2);
     width: 10vw;
     height: 100vh;
-    display: none;
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -207,13 +208,9 @@ main h1 {
     border-radius: 10px;
 }
 
-.reveal {
-    position: absolute;
-    right: 0;
-}
 
 .pop {
-    display: flex;
+    transform: translateX(0%);
 }
 
 @media all and (max-width: 480px) {
@@ -225,16 +222,12 @@ main h1 {
     .toggle-button {
         display: flex;
     }
-    .reveal {
-        position: absolute;
-        right: 0;
-    }
+    
     nav {
         width: 80vw;
-        display: none;
     }
     .pop {
-        display: flex;
+        transform: translateX(0%);
     }
     .grid {
         display: grid;
